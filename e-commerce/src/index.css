@@ -17,7 +17,7 @@ html {
   --orange: #ff7d1a;
   --pale-orange: #ffede0;
   --dark-blue: #1d2025;
-  --gray-blue: #68707d;
+  --grey-blue: #68707d;
   --light-gray-blue: #f7f8fd;
 
   /* colors */
@@ -73,7 +73,7 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: "Outfit", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
@@ -264,3 +264,72 @@ li {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
+/* ============= NAVBAR =============== */
+nav {
+  height: 112px;
+  display: grid;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1111px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border-bottom: 2px solid hsl(234, 26%, 93%);
+}
+
+.nav-links {
+  margin-left: 59px;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: var(--grey-blue);
+  padding-bottom: 42px;
+}
+.nav-links li a:hover {
+  color: var(--dark-blue);
+  border-bottom: 4px solid var(--orange);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.icon-cart {
+  position: relative;
+  padding: 0.8rem;
+}
+
+.icon-cart:hover svg path {
+  fill: var(--dark-blue);
+}
+
+.icon-cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 9px;
+}
+
+.nav-icons img {
+  height: 50px;
+  border: 1.5px solid var(--orange);
+  border-radius: 50%;
+}
+
+.nav-icons img:hover {
+  border: 2px solid var(--orange);
+}
+/* ============= END OF NAVBAR =============== */
