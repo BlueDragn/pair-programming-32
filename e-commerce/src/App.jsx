@@ -1,7 +1,9 @@
+import Navbar from "./Navbar";
+
 function App() {
   return (
     <>
-      <h1 className="title">Starter Files</h1>
+      <Navbar />
     </>
   );
 }
